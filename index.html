@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Amit Sarker — CSE Student & Aspiring Software Engineer</title>
+<meta name="description" content="Portfolio of Amit Sarker, CSE student at IUBAT, web developer and future software engineer." />
+<meta property="og:title" content="Amit Sarker — Portfolio" />
+<meta property="og:description" content="CSE student at IUBAT, web developer, aspiring software engineer." />
+<meta property="og:type" content="website" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="particles" class="particles"></div>
+
+<nav class="nav glass">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Amit.</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">☀️</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Hello, I am</p>
+      <h1>Amit <span class="gradient-text">Sarker</span></h1>
+      <div class="role-line">
+        <span>I'm a</span>
+        <span class="role" id="role"></span>
+        <span class="cursor"></span>
+      </div>
+      <p class="muted">Building innovative software and web systems that help people and solve real-world problems.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#" class="btn btn-outline">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="glow-bg"></div>
+      <div class="img-frame glass">
+        <img src="amit-profile.jpg" alt="Amit Sarker" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+  <div class="grid grid-2">
+    <div class="card glass">
+      <h3 class="gradient-text">Who I Am</h3>
+      <p class="muted">I'm a Computer Science and Engineering student at IUBAT, passionate about turning ideas into working software. I love clean code, thoughtful UI, and problem-solving — and I'm always learning the next thing.</p>
+    </div>
+    <div class="card glass">
+      <h3 class="gradient-text">My Goal</h3>
+      <p class="muted">To become a software engineer who builds reliable, useful products — web systems, tools and apps that genuinely help the people who use them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <h2 class="section-title"><span class="gradient-text">Skills</span></h2>
+  <div class="grid grid-2" id="skillsGrid"></div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
+  <div class="grid grid-2" id="projectsGrid"></div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+  <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+  <div class="grid">
+    <div class="card glass edu"><span class="edu-bar"></span>
+      <p class="eyebrow">2023 — Present</p>
+      <h3>IUBAT — International University of Business Agriculture and Technology</h3>
+      <p class="muted">B.Sc. in Computer Science and Engineering</p>
+      <p class="accent">CGPA: 3.74</p>
+    </div>
+    <div class="card glass edu"><span class="edu-bar"></span>
+      <p class="eyebrow">2021 — 2022</p>
+      <h3>Sirajganj Government College</h3>
+      <p class="muted">Higher Secondary Certificate (HSC) — Science</p>
+      <p class="accent">GPA: 4.83</p>
+    </div>
+    <div class="card glass edu"><span class="edu-bar"></span>
+      <p class="eyebrow">2019 — 2020</p>
+      <h3>Binayekpur High School</h3>
+      <p class="muted">Secondary School Certificate (SSC) — Science</p>
+      <p class="accent">GPA: 5.00</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2 class="section-title"><span class="gradient-text">Let's Connect</span></h2>
+  <div class="card glass contact-card">
+    <p class="muted">Open to opportunities, collaborations, and a friendly chat about code.</p>
+    <div class="social-row">
+      <a class="social" href="mailto:amitsgc24@gmail.com">Email</a>
+      <a class="social" href="https://github.com/amitsarker27" target="_blank" rel="noopener">GitHub</a>
+      <a class="social" href="https://www.linkedin.com/in/amit-sarker-114779310/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="social" href="https://www.facebook.com/amitsarker24" target="_blank" rel="noopener">Facebook</a>
+      <a class="social" href="https://www.instagram.com/amit.sarker1/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">© <span id="yr"></span> Amit Sarker. Crafted with care.</footer>
+
+<button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
