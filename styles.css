@@ -8,6 +8,13 @@
   --border: rgba(255,255,255,0.08);
   --gradient: linear-gradient(135deg, #7c5cff 0%, #22d3ee 100%);
   --shadow: 0 10px 40px -10px rgba(124,92,255,0.4);
+    --nav-bg: rgba(11, 15, 26, 0.92);      /* dark navbar — 92% opaque */
+  --nav-border: rgba(255, 255, 255, 0.08);
+}
+html.light {
+  /* ...tomar existing... */
+  --nav-bg: rgba(245, 247, 255, 0.92);   /* light navbar */
+  --nav-border: rgba(0, 0, 0, 0.08);
 }
 html.light {
   --bg: #f5f7ff;
@@ -42,7 +49,16 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { color: var(--primary); font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; font-weight: 600; }
 
 /* Nav */
-.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 40; padding: 1rem 1.5rem; }
+/* Nav */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 40;
+  padding: 1rem 1.5rem;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
 .nav-inner { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-size: 1.2rem; background: var(--gradient); -webkit-background-clip: text; color: transparent; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
@@ -52,9 +68,17 @@ a { color: inherit; text-decoration: none; }
 .menu-btn { display: none; font-size: 1.4rem; border: none; }
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; align-items: flex-start; margin-top: 1rem; width: 100%; gap: 1rem; }
+  .nav-links.open {
+    display: flex; flex-direction: column; align-items: flex-start;
+    margin-top: 1rem; width: 100%; gap: 1rem;
+    background: var(--nav-bg);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--nav-border);
+  }
   .menu-btn { display: block; }
 }
+
 
 /* Hero */
 .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1.5rem 3rem; }
