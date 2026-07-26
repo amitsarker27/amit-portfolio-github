@@ -1,5 +1,5 @@
 // Data
-const ROLES = ["CSE Student", "Web Developer", "Future Software Engineer"];
+const ROLES = ["CSE Student"];
 const SKILLS = [
   { name: "HTML", level: 92 }, { name: "CSS", level: 88 },
   { name: "JavaScript", level: 85 }, { name: "Python", level: 80 },
