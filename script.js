@@ -3,11 +3,7 @@
 // ============================================================
 
 const ROLES = [
-  "CSE Student",
-  "Aspiring Software Engineer",
-  "Web Developer",
-  "ASP.NET Developer",
-  "Problem Solver"
+  "CSE Student"
 ];
 
 const SKILLS = [
