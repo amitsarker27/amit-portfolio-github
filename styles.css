@@ -1,441 +1,53 @@
-/* ============================================================
-   RESPONSIVE SYSTEM
-   Works across mobile, tablet, laptop & desktop
-============================================================ */
-
-/* Prevent overflow */
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
+name=styles.css url=https://github.com/amitsarker27/amit-portfolio-github/blob/42bce2696b23e70ed0a383fa29e174c6dc3dfee5/styles.css#L1-L50
 
 /* ============================================================
-   LARGE DESKTOP
+AMIT SARKER PORTFOLIO
+Main Stylesheet
 ============================================================ */
-
-@media (min-width: 1200px) {
-
-  .nav-inner,
-  .hero-inner,
-  .section {
-    max-width: 1150px;
-  }
-
-  .hero-inner {
-    gap: 5rem;
-  }
-
-}
-
 
 /* ============================================================
-   TABLET / SMALL LAPTOP
+ROOT VARIABLES
 ============================================================ */
 
-@media (max-width: 1024px) {
+:root {
+--bg: #0b0f1a;
+--fg: #e6ecff;
+--muted: #97a3c2;
 
-  .nav {
-    padding: 0.9rem 1.2rem;
-  }
+--primary: #7c5cff;
+--primary-2: #22d3ee;
 
-  .nav-inner {
-    max-width: 900px;
-  }
+--card: rgba(255, 255, 255, 0.04);
+--card-hover: rgba(255, 255, 255, 0.07);
 
-  .hero {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+--border: rgba(255, 255, 255, 0.08);
 
-  .hero-inner {
-    gap: 2rem;
-  }
+--gradient: linear-gradient(
+135deg,
+#7c5cff 0%,
+#22d3ee 100%
+);
 
-  .hero-text h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-  }
+--shadow: 0 10px 40px -10px rgba(124, 92, 255, 0.4);
 
-  .img-frame {
-    width: 300px;
-    height: 300px;
-  }
-
-  .section {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
+--nav-bg: rgba(11, 15, 26, 0.92);
+--nav-border: rgba(255, 255, 255, 0.08);
 }
 
-
 /* ============================================================
-   TABLET
+LIGHT MODE
 ============================================================ */
 
-@media (max-width: 768px) {
+html.light {
+--bg: #f5f7ff;
+--fg: #0b0f1a;
+--muted: #4a5578;
 
-  .nav {
-    padding: 0.85rem 1rem;
-  }
+--card: rgba(255, 255, 255, 0.72);
+--card-hover: rgba(255, 255, 255, 0.95);
 
-  .nav-inner {
-    position: relative;
-    flex-wrap: wrap;
-  }
+--border: rgba(0, 0, 0, 0.08);
 
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    gap: 0.25rem;
-
-    margin-top: 0.75rem;
-    padding: 0.75rem;
-
-    background: var(--nav-bg);
-    border: 1px solid var(--nav-border);
-    border-radius: 0.85rem;
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-  }
-
-  .nav-links.open a {
-    width: 100%;
-    padding: 0.65rem 0.75rem;
-  }
-
-  .theme-btn {
-    margin-top: 0.4rem;
-    align-self: flex-start;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-
-  /* Hero */
-
-  .hero {
-    min-height: auto;
-    padding-top: 8rem;
-    padding-bottom: 5rem;
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 3rem;
-  }
-
-  .hero-text {
-    width: 100%;
-  }
-
-  .role-line {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .cta-row {
-    justify-content: center;
-  }
-
-  .hero-img-wrap {
-    order: -1;
-  }
-
-  .img-frame {
-    width: min(70vw, 320px);
-    height: min(70vw, 320px);
-  }
-
-
-  /* Sections */
-
-  .section {
-    width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .section-title {
-    margin-bottom: 2rem;
-  }
-
-
-  /* Grid */
-
-  .grid-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-
-  /* Cards */
-
-  .card {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-
-}
-
-
-/* ============================================================
-   MOBILE
-============================================================ */
-
-@media (max-width: 600px) {
-
-  .nav {
-    padding: 0.75rem 0.85rem;
-  }
-
-  .logo {
-    font-size: 1.1rem;
-  }
-
-
-  /* Hero */
-
-  .hero {
-    padding: 7rem 1rem 4rem;
-  }
-
-  .hero-inner {
-    gap: 2.5rem;
-  }
-
-  .hero-text h1 {
-    font-size: clamp(2.3rem, 12vw, 3.5rem);
-  }
-
-  .role-line {
-    font-size: 1.05rem;
-    gap: 0.35rem;
-  }
-
-  .hero-text > * + * {
-    margin-top: 1rem;
-  }
-
-  .hero-text .muted {
-    font-size: 0.9rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  /* Image */
-
-  .img-frame {
-    width: min(72vw, 280px);
-    height: min(72vw, 280px);
-  }
-
-
-  /* Buttons */
-
-  .cta-row {
-    width: 100%;
-    gap: 0.7rem;
-  }
-
-  .btn {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.85rem;
-  }
-
-
-  /* Sections */
-
-  .section {
-    padding: 4rem 1rem;
-  }
-
-  .section-title {
-    font-size: clamp(1.8rem, 9vw, 2.5rem);
-  }
-
-
-  /* Single column */
-
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
-
-  /* Cards */
-
-  .card {
-    padding: 1.35rem;
-    border-radius: 0.9rem;
-  }
-
-  .card h3 {
-    font-size: 1.15rem;
-  }
-
-
-  /* Skills */
-
-  .skill {
-    padding: 1rem;
-  }
-
-  .skill-head {
-    font-size: 0.85rem;
-  }
-
-
-  /* Projects */
-
-  .project {
-    width: 100%;
-  }
-
-  .project-icon {
-    width: 38px;
-    height: 38px;
-  }
-
-  .project .tag-row {
-    gap: 0.4rem;
-  }
-
-  .tag {
-    font-size: 0.7rem;
-    padding: 0.25rem 0.65rem;
-  }
-
-
-  /* Education */
-
-  .edu {
-    padding-left: 1.5rem;
-  }
-
-  .edu h3 {
-    font-size: 1.1rem;
-  }
-
-
-  /* Contact */
-
-  .contact-card {
-    width: 100%;
-  }
-
-  .social-row {
-    gap: 0.5rem;
-  }
-
-  .social {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.8rem;
-  }
-
-
-  /* Back to top */
-
-  .top-btn {
-    width: 42px;
-    height: 42px;
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-}
-
-
-/* ============================================================
-   SMALL MOBILE
-============================================================ */
-
-@media (max-width: 380px) {
-
-  .hero {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .role-line {
-    font-size: 0.95rem;
-  }
-
-  .cta-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .img-frame {
-    width: 230px;
-    height: 230px;
-  }
-
-  .section {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-  }
-
-  .card {
-    padding: 1.1rem;
-  }
-
-}
-
-
-/* ============================================================
-   VERY SMALL DEVICES
-============================================================ */
-
-@media (max-width: 320px) {
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .img-frame {
-    width: 210px;
-    height: 210px;
-  }
-
-  .section-title {
-    font-size: 1.7rem;
-  }
-
-  .social {
-    width: 100%;
-    text-align: center;
-  }
-
+--nav-bg: rgba(245, 247, 255, 0.94);
+--nav-border: rgba(0, 0, 0, 0.08);
 }
