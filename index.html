@@ -1,134 +1,526 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Amit Sarker — CSE Student & Aspiring Software Engineer</title>
-<meta name="description" content="Portfolio of Amit Sarker, CSE student at IUBAT, web developer and future software engineer." />
-<meta property="og:title" content="Amit Sarker — Portfolio" />
-<meta property="og:description" content="CSE student at IUBAT, web developer, aspiring software engineer." />
-<meta property="og:type" content="website" />
-<link rel="stylesheet" href="styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+
+<meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0"
+/>
+
+  <title>Amit Sarker — CSE Student & Aspiring Software Engineer</title>
+
+<meta
+ name="description"
+ content="Amit Sarker is a CSE student at IUBAT and aspiring software engineer skilled in C#, ASP.NET Core, JavaScript, React, Python, C++, MySQL and web development."
+/>
+
+  <meta name="author" content="Amit Sarker" />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph -->
+
+  <meta property="og:title" content="Amit Sarker — Portfolio" />
+  <meta
+    property="og:description"
+    content="CSE student, web developer and aspiring software engineer."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="amit-profile.png" />
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<div id="particles" class="particles"></div>
+  <!-- Background particles -->
 
-<nav class="nav glass">
-  <div class="nav-inner">
-    <a href="#home" class="logo">Amit.</a>
-    <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">☀️</button>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  <div id="particles" class="particles"></div>
+
+  <!-- Navigation -->
+
+  <nav class="nav glass" aria-label="Main navigation">
+    <div class="nav-inner">
+
+```
+  <a href="#home" class="logo" aria-label="Amit Sarker Home">
+    Amit<span>.</span>
+  </a>
+
+  <div class="nav-links" id="navLinks">
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+
+    <button
+      id="themeBtn"
+      class="theme-btn"
+      aria-label="Toggle theme"
+      type="button"
+    >
+      ☀️
+    </button>
+
   </div>
-</nav>
 
-<!-- Hero -->
+  <button
+    class="menu-btn"
+    id="menuBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    type="button"
+  >
+    ☰
+  </button>
+
+</div>
+```
+
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+
+  <main>
+
+```
 <section id="home" class="hero">
+
   <div class="hero-inner">
+
     <div class="hero-text reveal">
+
       <p class="eyebrow">Hello, I am</p>
-      <h1>Amit <span class="gradient-text">Sarker</span></h1>
+
+      <h1>
+        Amit
+        <span class="gradient-text">Sarker</span>
+      </h1>
+
       <div class="role-line">
         <span>I'm a</span>
-        <span class="role" id="role"></span>
+
+        <span
+          class="role"
+          id="role"
+          aria-live="polite"
+        ></span>
+
         <span class="cursor"></span>
       </div>
-      <p class="muted">Building innovative software and web systems that help people and solve real-world problems.</p>
+
+      <p class="hero-description muted">
+        CSE student and aspiring software engineer focused on
+        building reliable web applications, useful software
+        systems and real-world solutions.
+      </p>
+
       <div class="cta-row">
-        <a href="#contact" class="btn btn-primary">Contact Me</a>
-        <a href="https://drive.google.com/file/d/1DhbJv2cDEg_-Bd5s9r-6Nj25tpybX5Ea/view?usp=drivesdk" class="btn btn-outline">Download CV</a>
+
+        <a
+          href="#contact"
+          class="btn btn-primary"
+        >
+          Contact Me
+        </a>
+
+        <a
+          href="https://drive.google.com/file/d/1DhbJv2cDEg_-Bd5s9r-6Nj25tpybX5Ea/view?usp=drivesdk"
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+
       </div>
+
+      <div class="hero-tech">
+
+        <span>C#</span>
+        <span>ASP.NET Core</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>MySQL</span>
+
+      </div>
+
     </div>
+
+
     <div class="hero-img-wrap">
+
       <div class="glow-bg"></div>
+
       <div class="img-frame glass">
-        <img src="amit-profile.png" alt="Amit Sarker" />
+
+        <img
+          src="amit-profile.png"
+          alt="Portrait of Amit Sarker"
+          loading="eager"
+        />
+
       </div>
+
+      <div class="floating-badge badge-one">
+        <span>💻</span>
+        <small>Developer</small>
+      </div>
+
+      <div class="floating-badge badge-two">
+        <span>🚀</span>
+        <small>Always Learning</small>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- About -->
+
+<!-- ==================== ABOUT ==================== -->
+
 <section id="about" class="section">
-  <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">Get to know me</p>
+
+    <h2 class="section-title">
+      <span class="gradient-text">About Me</span>
+    </h2>
+
+  </div>
+
   <div class="grid grid-2">
+
     <div class="card glass">
+
+      <div class="card-number">01</div>
+
       <h3 class="gradient-text">Who I Am</h3>
-      <p class="muted">I'm a Computer Science and Engineering student at IUBAT, passionate about turning ideas into working software. I love clean code, thoughtful UI, and problem-solving — and I'm always learning the next thing.</p>
+
+      <p class="muted">
+        I'm a Computer Science and Engineering student at IUBAT,
+        passionate about turning ideas into working software.
+        I enjoy building web applications, learning modern
+        technologies and solving programming problems.
+      </p>
+
     </div>
+
+
     <div class="card glass">
+
+      <div class="card-number">02</div>
+
       <h3 class="gradient-text">My Goal</h3>
-      <p class="muted">To become a software engineer who builds reliable, useful products — web systems, tools and apps that genuinely help the people who use them.</p>
+
+      <p class="muted">
+        My goal is to become a professional software engineer
+        capable of building reliable, scalable and user-friendly
+        applications that solve real-world problems.
+      </p>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- Skills -->
+
+<!-- ==================== SKILLS ==================== -->
+
 <section id="skills" class="section">
-  <h2 class="section-title"><span class="gradient-text">Skills</span></h2>
-  <div class="grid grid-2" id="skillsGrid"></div>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">What I work with</p>
+
+    <h2 class="section-title">
+      <span class="gradient-text">Technical Skills</span>
+    </h2>
+
+  </div>
+
+  <div class="skill-category-grid">
+
+    <div class="skill-category glass">
+
+      <h3>Frontend</h3>
+
+      <p>
+        HTML, CSS, JavaScript, React and modern UI frameworks.
+      </p>
+
+    </div>
+
+    <div class="skill-category glass">
+
+      <h3>Backend</h3>
+
+      <p>
+        C#, ASP.NET Core, ASP.NET MVC, Web API and PHP.
+      </p>
+
+    </div>
+
+    <div class="skill-category glass">
+
+      <h3>Programming</h3>
+
+      <p>
+        C, C++, Python, OOP and problem solving.
+      </p>
+
+    </div>
+
+    <div class="skill-category glass">
+
+      <h3>Database</h3>
+
+      <p>
+        MySQL, SQL, phpMyAdmin and database management.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="grid skills-grid" id="skillsGrid"></div>
+
 </section>
 
-<!-- Projects -->
+
+<!-- ==================== PROJECTS ==================== -->
+
 <section id="projects" class="section">
-  <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
-  <div class="grid grid-2" id="projectsGrid"></div>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">Things I've built</p>
+
+    <h2 class="section-title">
+      <span class="gradient-text">Featured Projects</span>
+    </h2>
+
+  </div>
+
+  <div class="grid projects-grid" id="projectsGrid"></div>
+
 </section>
 
-<!-- Education -->
+
+<!-- ==================== EDUCATION ==================== -->
+
 <section id="education" class="section">
-  <h2 class="section-title"><span class="gradient-text">Education</span></h2>
-  <div class="grid">
-    <div class="card glass edu"><span class="edu-bar"></span>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">My academic journey</p>
+
+    <h2 class="section-title">
+      <span class="gradient-text">Education</span>
+    </h2>
+
+  </div>
+
+  <div class="education-list">
+
+    <div class="card glass edu">
+
+      <span class="edu-bar"></span>
+
       <p class="eyebrow">2023 — Present</p>
-      <h3>IUBAT — International University of Business Agriculture and Technology</h3>
-      <p class="muted">B.Sc. in Computer Science and Engineering</p>
-      <p class="accent"> </p>
+
+      <h3>
+        IUBAT — International University of Business Agriculture
+        and Technology
+      </h3>
+
+      <p class="muted">
+        B.Sc. in Computer Science and Engineering
+      </p>
+
+      <span class="education-status">
+        Undergraduate
+      </span>
+
     </div>
-    <div class="card glass edu"><span class="edu-bar"></span>
+
+
+    <div class="card glass edu">
+
+      <span class="edu-bar"></span>
+
       <p class="eyebrow">2021 — 2022</p>
-      <h3>Sirajganj Government College</h3>
-      <p class="muted">Higher Secondary Certificate (HSC) — Science</p>
-      <p class="accent"> </p>
+
+      <h3>
+        Sirajganj Government College
+      </h3>
+
+      <p class="muted">
+        Higher Secondary Certificate (HSC) — Science
+      </p>
+
+      <span class="education-status">
+        Completed
+      </span>
+
     </div>
-    <div class="card glass edu"><span class="edu-bar"></span>
+
+
+    <div class="card glass edu">
+
+      <span class="edu-bar"></span>
+
       <p class="eyebrow">2019 — 2020</p>
-      <h3>Binayekpur High School</h3>
-      <p class="muted">Secondary School Certificate (SSC) — Science</p>
-      <p class="accent"> </p>
+
+      <h3>
+        Binayekpur High School
+      </h3>
+
+      <p class="muted">
+        Secondary School Certificate (SSC) — Science
+      </p>
+
+      <span class="education-status">
+        Completed
+      </span>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- Contact -->
+
+<!-- ==================== CONTACT ==================== -->
+
 <section id="contact" class="section">
-  <h2 class="section-title"><span class="gradient-text">Let's Connect</span></h2>
-  <div class="card glass contact-card">
-    <p class="muted">Open to opportunities, collaborations, and a friendly chat about code.</p>
-    <div class="social-row">
-      <a class="social" href="mailto:amitsgc24@gmail.com">Email</a>
-      <a class="social" href="https://github.com/amitsarker27" target="_blank" rel="noopener">GitHub</a>
-      <a class="social" href="https://www.linkedin.com/in/amit-sarker-114779310/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="social" href="https://www.facebook.com/amitsarker24" target="_blank" rel="noopener">Facebook</a>
-      <a class="social" href="https://www.instagram.com/amit.sarker1/" target="_blank" rel="noopener">Instagram</a>
-    </div>
+
+  <div class="section-heading">
+
+    <p class="eyebrow">Have a project in mind?</p>
+
+    <h2 class="section-title">
+      <span class="gradient-text">Let's Connect</span>
+    </h2>
+
   </div>
+
+  <div class="card glass contact-card">
+
+    <div>
+
+      <h3>Let's build something together.</h3>
+
+      <p class="muted">
+        Open to internships, software development opportunities,
+        collaborations and interesting projects.
+      </p>
+
+    </div>
+
+    <div class="social-row">
+
+      <a
+        class="social"
+        href="mailto:amitsgc24@gmail.com"
+      >
+        Email
+      </a>
+
+      <a
+        class="social"
+        href="https://github.com/amitsarker27"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        class="social"
+        href="https://www.linkedin.com/in/amit-sarker-114779310/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        class="social"
+        href="https://www.facebook.com/amitsarker24"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      </a>
+
+      <a
+        class="social"
+        href="https://www.instagram.com/amit.sarker1/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
+```
 
-<footer class="footer">© <span id="yr"></span> Amit Sarker.</footer>
+  </main>
 
-<button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+  <!-- Footer -->
 
-<script src="script.js"></script>
+  <footer class="footer">
+
+```
+<p>
+  © <span id="yr"></span> Amit Sarker.
+  Built with HTML, CSS & JavaScript.
+</p>
+```
+
+  </footer>
+
+  <!-- Back to top -->
+
+<button
+id="topBtn"
+class="top-btn"
+aria-label="Back to top"
+type="button"
+
+>
+
+```
+↑
+```
+
+  </button>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
