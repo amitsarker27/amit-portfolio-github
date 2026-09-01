@@ -1,59 +1,59 @@
 // ============================================================
-// PORTFOLIO DATA
+// DATA
 // ============================================================
 
 const ROLES = [
   "CSE Student",
-  "Aspiring Full-Stack Developer",
-  "ASP.NET Core Developer",
+  "Aspiring Software Engineer",
   "Web Developer",
+  "ASP.NET Developer",
   "Problem Solver"
 ];
 
 const SKILLS = [
-  // ==================== FRONTEND ====================
+
+  // Frontend
   { name: "HTML", level: 92 },
   { name: "CSS", level: 88 },
   { name: "JavaScript", level: 85 },
-  { name: "Bootstrap 5", level: 85 },
-  { name: "Tailwind CSS", level: 80 },
-  { name: "React.js", level: 75 },
-  { name: "Responsive Design", level: 88 },
+  { name: "React", level: 78 },
+  { name: "Bootstrap", level: 82 },
+  { name: "Tailwind CSS", level: 78 },
 
-  // ==================== BACKEND ====================
+  // Programming
+  { name: "C", level: 78 },
+  { name: "C++", level: 80 },
   { name: "C#", level: 78 },
-  { name: "ASP.NET Core", level: 72 },
-  { name: "ASP.NET MVC", level: 78 },
-  { name: "Web API", level: 70 },
-  { name: "PHP", level: 78 },
+  { name: "Python", level: 80 },
 
-  // ==================== PROGRAMMING ====================
-  { name: "C", level: 80 },
-  { name: "C++", level: 78 },
-  { name: "Python", level: 75 },
+  // Backend / .NET
+  { name: "ASP.NET Core", level: 75 },
+  { name: "ASP.NET MVC", level: 75 },
+  { name: "Web API", level: 72 },
 
-  // ==================== DATABASE ====================
-  { name: "MySQL", level: 82 },
-  { name: "SQL", level: 82 },
-  { name: "phpMyAdmin", level: 80 },
-  { name: "Database Management", level: 80 },
+  // Database
+  { name: "MySQL", level: 80 },
+  { name: "SQL", level: 78 },
+  { name: "Database Design", level: 75 },
 
-  // ==================== TOOLS ====================
+  // Core CS
+  { name: "OOP", level: 82 },
+  { name: "Data Structures", level: 75 },
+  { name: "Algorithms", level: 72 },
+  { name: "Problem Solving", level: 85 },
+
+  // Tools
   { name: "Git", level: 82 },
   { name: "GitHub", level: 85 },
   { name: "VS Code", level: 90 },
-  { name: "Visual Studio", level: 82 },
-  { name: "XAMPP", level: 78 },
+  { name: "Visual Studio", level: 78 },
+  { name: "XAMPP", level: 80 },
+  { name: "phpMyAdmin", level: 80 },
 
-  // ==================== COMPUTER SCIENCE ====================
-  { name: "Object-Oriented Programming", level: 82 },
-  { name: "Data Structures & Algorithms", level: 75 },
-  { name: "Problem Solving", level: 85 },
-  { name: "Web Development", level: 88 },
-  { name: "REST API", level: 70 },
-
-  // ==================== PRODUCTIVITY ====================
-  { name: "MS Office", level: 85 }
+  // Other
+  { name: "REST API", level: 72 },
+  { name: "Responsive Design", level: 88 },
+  { name: "UI/UX Basics", level: 75 }
 ];
 
 
@@ -62,53 +62,47 @@ const SKILLS = [
 // ============================================================
 
 const PROJECTS = [
+
   {
-    title: "Pharmacy Management System",
-    desc: "Full-stack pharmacy management system for managing medicines, inventory, sales, customers and records.",
-    tags: ["C#", "ASP.NET MVC", "MySQL"]
+    title: "Appointment Management System",
+    desc: "A complete appointment management system designed to manage appointments, users and service workflows efficiently.",
+    tags: ["ASP.NET", "C#", "MVC", "Database"],
+    github: "https://github.com/amitsarker27/appoinment-management-system",
+    featured: true
   },
 
   {
-    title: "Inventory Management System",
-    desc: "Management system designed to track products, stock, inventory records and business operations.",
-    tags: ["Web", "Database", "CRUD"]
+    title: "ISP Management System",
+    desc: "An ISP management system for handling customers, internet services and operational management.",
+    tags: ["C#", "Database", "Management System"],
+    github: "https://github.com/amitsarker27/isp_system",
+    featured: true
   },
 
   {
-    title: "Routine Management App",
-    desc: "Smart class and study routine planner with date-based scheduling, weekly views and productivity features.",
-    tags: ["JavaScript", "UI", "Productivity"]
+    title: "Banking Management System",
+    desc: "A banking system project focused on customer accounts, transactions and core banking operations.",
+    tags: ["C#", "OOP", "Database"],
+    github: "#",
+    featured: true
   },
 
   {
-    title: "Overtime Calculator",
-    desc: "Clean web-based tool for calculating overtime pay using flexible working hours and shift rules.",
-    tags: ["JavaScript", "Logic", "Tool"]
+    title: "Routine Management System",
+    desc: "A smart routine management application for organizing class and study schedules with a simple user-friendly interface.",
+    tags: ["JavaScript", "HTML", "CSS", "Productivity"],
+    github: "#",
+    featured: false
   },
 
   {
-    title: "Student Management System",
-    desc: "CRUD-based system for managing students, courses, grades and academic records with database integration.",
-    tags: ["Python", "Database", "CRUD"]
-  },
-
-  {
-    title: "E-Commerce Website",
-    desc: "Responsive e-commerce website developed for a construction and consultancy business.",
-    tags: ["HTML", "CSS", "JavaScript", "PHP"]
-  },
-
-  {
-    title: "Class Routine Web App",
-    desc: "Web application for storing and accessing class routines by date, day and time.",
-    tags: ["JavaScript", "Web App", "Database"]
-  },
-
-  {
-    title: "GitHub Portfolio Website",
-    desc: "Personal developer portfolio showcasing skills, projects, technologies and GitHub activity.",
-    tags: ["HTML", "CSS", "JavaScript"]
+    title: "Amit Portfolio",
+    desc: "Personal portfolio website showcasing my skills, projects, education and software development journey.",
+    tags: ["HTML", "CSS", "JavaScript", "Portfolio"],
+    github: "https://github.com/amitsarker27/amit-portfolio-github",
+    featured: false
   }
+
 ];
 
 
@@ -116,113 +110,137 @@ const PROJECTS = [
 // YEAR
 // ============================================================
 
-const yearElement = document.getElementById("yr");
-
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
+document.getElementById("yr").textContent =
+  new Date().getFullYear();
 
 
 // ============================================================
 // RENDER SKILLS
 // ============================================================
 
-const skillsGrid = document.getElementById("skillsGrid");
+const skillsGrid =
+  document.getElementById("skillsGrid");
 
-if (skillsGrid) {
+skillsGrid.innerHTML = "";
 
-  SKILLS.forEach((skill) => {
+SKILLS.forEach((skill) => {
 
-    const el = document.createElement("div");
+  const el = document.createElement("div");
 
-    el.className = "card glass skill";
+  el.className = "card glass skill";
 
-    el.innerHTML = `
-      <div class="skill-head">
-        <span>${skill.name}</span>
-        <span class="pct">${skill.level}%</span>
-      </div>
+  el.innerHTML = `
+    <div class="skill-head">
+      <span>${skill.name}</span>
+      <span class="pct">${skill.level}%</span>
+    </div>
 
-      <div class="bar">
-        <span data-level="${skill.level}"></span>
-      </div>
-    `;
+    <div class="bar">
+      <span data-level="${skill.level}"></span>
+    </div>
+  `;
 
-    skillsGrid.appendChild(el);
+  skillsGrid.appendChild(el);
 
-  });
-
-}
+});
 
 
 // ============================================================
 // RENDER PROJECTS
 // ============================================================
 
-const projectsGrid = document.getElementById("projectsGrid");
+const projectsGrid =
+  document.getElementById("projectsGrid");
 
-if (projectsGrid) {
+projectsGrid.innerHTML = "";
 
-  PROJECTS.forEach((project) => {
+PROJECTS.forEach((project) => {
 
-    const el = document.createElement("div");
+  const el = document.createElement("div");
 
-    el.className = "card glass project";
+  el.className =
+    `card glass project ${
+      project.featured ? "featured-project" : ""
+    }`;
 
-    el.innerHTML = `
-      <div class="project-icon">
-        ${project.title.charAt(0)}
-      </div>
+  el.innerHTML = `
 
-      <h3>${project.title}</h3>
+    ${
+      project.featured
+        ? `<span class="featured-label">Featured</span>`
+        : ""
+    }
 
-      <p class="muted">
-        ${project.desc}
-      </p>
+    <div class="project-icon">
+      ${project.title.charAt(0)}
+    </div>
 
-      <div class="tag-row">
-        ${project.tags
-          .map(tag => `<span class="tag">${tag}</span>`)
-          .join("")}
-      </div>
-    `;
+    <h3>${project.title}</h3>
 
-    projectsGrid.appendChild(el);
+    <p class="muted">
+      ${project.desc}
+    </p>
 
-  });
+    <div class="tag-row">
 
-}
+      ${project.tags
+        .map(
+          tag => `<span class="tag">${tag}</span>`
+        )
+        .join("")}
+
+    </div>
+
+    ${
+      project.github !== "#"
+        ? `
+          <a
+            class="project-link"
+            href="${project.github}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub →
+          </a>
+        `
+        : ""
+    }
+
+  `;
+
+  projectsGrid.appendChild(el);
+
+});
 
 
 // ============================================================
 // TYPING EFFECT
 // ============================================================
 
-const roleEl = document.getElementById("role");
+const roleEl =
+  document.getElementById("role");
 
-let roleIndex = 0;
-let charIndex = 0;
+let ri = 0;
+let ci = 0;
 let deleting = false;
 
 function type() {
 
-  if (!roleEl) return;
+  const currentRole =
+    ROLES[ri];
 
-  const currentRole = ROLES[roleIndex];
+  roleEl.textContent =
+    currentRole.slice(0, ci);
 
-  roleEl.textContent = currentRole.slice(0, charIndex);
+  if (!deleting && ci < currentRole.length) {
 
-  // Typing
-  if (!deleting && charIndex < currentRole.length) {
+    ci++;
 
-    charIndex++;
-
-    setTimeout(type, 90);
+    setTimeout(type, 80);
 
   }
 
-  // Pause after completing word
-  else if (!deleting && charIndex === currentRole.length) {
+  else if (!deleting && ci === currentRole.length) {
 
     deleting = true;
 
@@ -230,25 +248,25 @@ function type() {
 
   }
 
-  // Deleting
-  else if (deleting && charIndex > 0) {
+  else if (deleting && ci > 0) {
 
-    charIndex--;
+    ci--;
 
-    setTimeout(type, 50);
+    setTimeout(type, 45);
 
   }
 
-  // Move to next role
   else {
 
     deleting = false;
 
-    roleIndex = (roleIndex + 1) % ROLES.length;
+    ri =
+      (ri + 1) % ROLES.length;
 
     setTimeout(type, 250);
 
   }
+
 }
 
 type();
@@ -258,159 +276,142 @@ type();
 // THEME TOGGLE
 // ============================================================
 
-const themeBtn = document.getElementById("themeBtn");
+const themeBtn =
+  document.getElementById("themeBtn");
 
-if (themeBtn) {
+themeBtn.addEventListener(
+  "click",
+  () => {
 
-  themeBtn.addEventListener("click", () => {
-
-    document.documentElement.classList.toggle("light");
+    document.documentElement
+      .classList
+      .toggle("light");
 
     const isLight =
-      document.documentElement.classList.contains("light");
+      document.documentElement
+        .classList
+        .contains("light");
 
-    themeBtn.textContent = isLight ? "🌙" : "☀️";
+    themeBtn.textContent =
+      isLight ? "🌙" : "☀️";
 
-    // Save theme preference
-    localStorage.setItem(
-      "portfolio-theme",
-      isLight ? "light" : "dark"
-    );
-
-  });
-
-}
-
-
-// ============================================================
-// LOAD SAVED THEME
-// ============================================================
-
-const savedTheme = localStorage.getItem("portfolio-theme");
-
-if (savedTheme === "light") {
-
-  document.documentElement.classList.add("light");
-
-  if (themeBtn) {
-    themeBtn.textContent = "🌙";
   }
-
-}
+);
 
 
 // ============================================================
 // MOBILE MENU
 // ============================================================
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const menuBtn =
+  document.getElementById("menuBtn");
 
-if (menuBtn && navLinks) {
+const navLinks =
+  document.getElementById("navLinks");
 
-  menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener(
+  "click",
+  () => {
 
     navLinks.classList.toggle("open");
 
+  }
+);
+
+navLinks
+  .querySelectorAll("a")
+  .forEach((link) => {
+
+    link.addEventListener(
+      "click",
+      () => {
+
+        navLinks.classList.remove("open");
+
+      }
+    );
+
   });
-
-
-  // Close menu after clicking a navigation link
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-      navLinks.classList.remove("open");
-
-    });
-
-  });
-
-}
 
 
 // ============================================================
 // BACK TO TOP
 // ============================================================
 
-const topBtn = document.getElementById("topBtn");
+const topBtn =
+  document.getElementById("topBtn");
 
-if (topBtn) {
+window.addEventListener(
+  "scroll",
+  () => {
 
-  window.addEventListener("scroll", () => {
+    topBtn.classList.toggle(
+      "show",
+      window.scrollY > 400
+    );
 
-    if (window.scrollY > 400) {
+  }
+);
 
-      topBtn.classList.add("show");
-
-    } else {
-
-      topBtn.classList.remove("show");
-
-    }
-
-  });
-
-
-  topBtn.addEventListener("click", () => {
+topBtn.addEventListener(
+  "click",
+  () => {
 
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
 
-  });
-
-}
-
-
-// ============================================================
-// REVEAL ON SCROLL + SKILL BAR ANIMATION
-// ============================================================
-
-const observer = new IntersectionObserver(
-
-  (entries) => {
-
-    entries.forEach((entry) => {
-
-      if (entry.isIntersecting) {
-
-        entry.target.classList.add("visible");
-
-        // Animate skill bars
-        entry.target
-          .querySelectorAll(".bar > span")
-          .forEach((bar) => {
-
-            bar.style.width =
-              bar.dataset.level + "%";
-
-          });
-
-      }
-
-    });
-
-  },
-
-  {
-    threshold: 0.15
   }
-
 );
 
 
-// Observe sections, hero and cards
+// ============================================================
+// REVEAL + SKILL ANIMATION
+// ============================================================
+
+const observer =
+  new IntersectionObserver(
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+          entry.target
+            .classList
+            .add("visible");
+
+          entry.target
+            .querySelectorAll(
+              ".bar > span"
+            )
+            .forEach((bar) => {
+
+              bar.style.width =
+                bar.dataset.level + "%";
+
+            });
+
+        }
+
+      });
+
+    },
+    {
+      threshold: 0.15
+    }
+  );
 
 document
-  .querySelectorAll(".section, .hero-text, .card")
-  .forEach((element) => {
+  .querySelectorAll(
+    ".section, .hero-text, .card"
+  )
+  .forEach((el) => {
 
-    element.classList.add("reveal");
+    el.classList.add("reveal");
 
-    observer.observe(element);
+    observer.observe(el);
 
   });
 
@@ -419,66 +420,26 @@ document
 // PARTICLES
 // ============================================================
 
-const particles = document.getElementById("particles");
+const particles =
+  document.getElementById("particles");
 
-if (particles) {
+for (let i = 0; i < 40; i++) {
 
-  for (let i = 0; i < 40; i++) {
+  const particle =
+    document.createElement("span");
 
-    const particle = document.createElement("span");
+  const size =
+    2 + Math.random() * 4;
 
-    const size = 2 + Math.random() * 4;
+  particle.style.cssText = `
+    width: ${size}px;
+    height: ${size}px;
+    left: ${Math.random() * 100}%;
+    top: ${Math.random() * 100}%;
+    animation-duration: ${6 + Math.random() * 10}s;
+    animation-delay: ${Math.random() * 6}s;
+  `;
 
-    particle.style.cssText = `
-      width: ${size}px;
-      height: ${size}px;
-      left: ${Math.random() * 100}%;
-      top: ${Math.random() * 100}%;
-      animation-duration: ${6 + Math.random() * 10}s;
-      animation-delay: ${Math.random() * 6}s;
-    `;
-
-    particles.appendChild(particle);
-
-  }
+  particles.appendChild(particle);
 
 }
-
-
-// ============================================================
-// SMOOTH SCROLL FOR INTERNAL LINKS
-// ============================================================
-
-document
-  .querySelectorAll('a[href^="#"]')
-  .forEach((link) => {
-
-    link.addEventListener("click", (event) => {
-
-      const targetId =
-        link.getAttribute("href");
-
-      if (
-        targetId &&
-        targetId !== "#"
-      ) {
-
-        const target =
-          document.querySelector(targetId);
-
-        if (target) {
-
-          event.preventDefault();
-
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-
-        }
-
-      }
-
-    });
-
-  });
